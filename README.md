@@ -1,7 +1,6 @@
 # Titanic Dataset — Data Cleaning Project
-
-**CodSoft Internship — Data Science Track**
-**Task 1: Data Cleaning**
+**CodSoft Internship — Data Analytics Track**
+**Task 1: Data Cleaning & Preprocessing**
 
 ## Task Objectives
 - Import a dataset using Python and inspect its structure
@@ -23,9 +22,8 @@
 > 3. Or use the Kaggle CLI: `kaggle competitions download -c titanic`
 
 ## Folder Structure
-
 ```
-titanic-data-cleaning/
+CODSOFT_DA_1/
 ├── data/
 │   ├── raw/
 │   │   └── titanic.csv              # original, unmodified dataset (891 rows)
@@ -38,16 +36,16 @@ titanic-data-cleaning/
 └── README.md
 ```
 
-## What was cleaned
-| Column     | Issue                        | Fix                                             |
-|------------|-------------------------------|--------------------------------------------------|
-| Age        | 177 missing (19.87%)          | Filled with median                                |
-| Embarked   | 2 missing (0.22%)             | Filled with mode                                  |
-| Cabin      | 687 missing (77.1%)           | Dropped column, replaced with binary `Has_Cabin`  |
-| Survived/Pclass/Sex/Embarked | stored as generic types | Converted to `category` dtype |
-| Duplicates | 0 found                       | Verified with `drop_duplicates()`                 |
+## What Was Cleaned
+| Column | Issue | Fix |
+|---|---|---|
+| Age | 177 missing (19.87%) | Filled with median |
+| Embarked | 2 missing (0.22%) | Filled with mode |
+| Cabin | 687 missing (77.1%) | Dropped column, replaced with binary `Has_Cabin` |
+| Survived / Pclass / Sex / Embarked | stored as generic types | Converted to `category` dtype |
+| Duplicates | 0 found | Verified with `drop_duplicates()` |
 
-## How to run
+## How to Run
 ```bash
 cd notebooks
 jupyter notebook data_cleaning.ipynb
@@ -59,4 +57,4 @@ python clean_titanic.py
 ```
 
 ## Submission
-Completed as part of the **CodSoft Data Science Internship**, Task 1 (Data Cleaning).
+Completed as part of the **CodSoft Data Analytics Internship**, Task 1 (Data Cleaning & Preprocessing).
